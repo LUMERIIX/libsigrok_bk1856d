@@ -224,6 +224,12 @@ src_libdrivers_la_SOURCES += \
 	src/hardware/beaglelogic/protocol.c \
 	src/hardware/beaglelogic/api.c
 endif
+if HW_BK_1856D
+src_libdrivers_la_SOURCES += \
+	src/hardware/bk-1856d/protocol.h \
+	src/hardware/bk-1856d/protocol.c \
+	src/hardware/bk-1856d/api.c
+endif
 if HW_BRYMEN_BM86X
 src_libdrivers_la_SOURCES += \
 	src/hardware/brymen-bm86x/protocol.h \
